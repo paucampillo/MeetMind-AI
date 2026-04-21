@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex items-center gap-8 text-xs text-muted-foreground">
           <a href="#" className="transition hover:text-foreground">Privacidad</a>
           <a href="#" className="transition hover:text-foreground">Términos</a>
-          <a href="#" className="transition hover:text-foreground">Contacto</a>
+          <a href="#" className="transition hover:text-foreground">Integraciones</a>
         </div>
       </div>
     </footer>

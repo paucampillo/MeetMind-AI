@@ -55,7 +55,7 @@ const FinalCTA = () => {
             type="submit"
             className="rounded-full bg-gradient-neon px-8 py-5 text-base font-semibold text-background shadow-glow-cyan transition hover:scale-[1.03]"
           >
-            Activar mi cuenta
+            Instalar Extensión Gratis
           </button>
         </motion.form>
 

@@ -11,8 +11,8 @@ const Nav = () => {
         </a>
         <div className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
           <a href="#features" className="transition hover:text-foreground">Producto</a>
-          <a href="#hardware" className="transition hover:text-foreground">Hardware</a>
-          <a href="#cta" className="transition hover:text-foreground">Precios</a>
+          <a href="#hardware" className="transition hover:text-foreground">Extensiones</a>
+          <a href="#pricing" className="transition hover:text-foreground">Precios</a>
         </div>
         <a
           href="#cta"

@@ -3,7 +3,8 @@ import Nav from "@/components/meetmind/Nav";
 import Hero from "@/components/meetmind/Hero";
 import StatBanner from "@/components/meetmind/StatBanner";
 import BentoGrid from "@/components/meetmind/BentoGrid";
-import Hardware from "@/components/meetmind/Hardware";
+import Extension from "@/components/meetmind/Extension";
+import Pricing from "@/components/meetmind/Pricing";
 import FinalCTA from "@/components/meetmind/FinalCTA";
 import Footer from "@/components/meetmind/Footer";
 
@@ -17,7 +18,8 @@ const Index = () => {
           <Hero />
           <StatBanner />
           <BentoGrid />
-          <Hardware />
+          <Extension />
+          <Pricing />
           <FinalCTA />
         </main>
         <Footer />
