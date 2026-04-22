@@ -69,10 +69,43 @@
     --sidebar-ring: 187 100% 50%;
   }
 
-  .dark {
-    /* Same as root - this app is dark only */
-    --background: 215 28% 7%;
-    --foreground: 210 40% 98%;
+  .light {
+    /* Light mode - clean luminous surface keeping neon accents */
+    --background: 210 40% 98%;          /* near white */
+    --foreground: 215 30% 12%;
+    --surface: 210 30% 96%;
+    --surface-elevated: 0 0% 100%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 30% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 30% 12%;
+
+    --primary: 187 95% 38%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 20% 94%;
+    --secondary-foreground: 215 30% 12%;
+
+    --muted: 215 20% 94%;
+    --muted-foreground: 215 15% 40%;
+
+    --accent: 291 80% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 215 25% 15%;              /* used at /10 opacity */
+    --input: 215 20% 88%;
+    --ring: 187 95% 38%;
+
+    --glass-bg: hsl(0 0% 100% / 0.6);
+    --glass-border: hsl(215 25% 15% / 0.08);
+
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 215 30% 12%;
+    --sidebar-accent: 215 20% 94%;
+    --sidebar-accent-foreground: 215 30% 12%;
+    --sidebar-border: 215 25% 15%;
   }
 }
 
