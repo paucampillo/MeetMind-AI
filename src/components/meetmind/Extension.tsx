@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import PlatformLogos from "./PlatformLogos";
 
 const ParticipantTile = ({
   initials,
@@ -202,6 +203,8 @@ const Extension = () => {
           </ul>
         </motion.div>
       </div>
+
+      <PlatformLogos />
     </section>
   );
 };
