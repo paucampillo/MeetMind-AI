@@ -141,7 +141,7 @@ const MeetMockup = () => (
 
 const Extension = () => {
   return (
-    <section id="hardware" className="relative py-32">
+    <section id="extension" className="relative py-32">
       <div className="container grid grid-cols-1 items-center gap-14 md:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
