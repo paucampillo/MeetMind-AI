@@ -118,6 +118,41 @@ const BentoGrid = () => {
             Una infraestructura.{" "}
             <span className="text-gradient-neon">Infinitos casos de uso.</span>
           </h2>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mt-8 flex justify-center"
+          >
+            <a
+              href="https://meetmind-peach.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full border border-neon-cyan/40 bg-surface-elevated/60 px-6 py-3 text-sm font-medium text-foreground backdrop-blur-md transition duration-300 hover:border-neon-cyan hover:shadow-glow-cyan"
+            >
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-neon-cyan opacity-75" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-neon-cyan" />
+              </span>
+              <span>Ver demo de la extensión en vivo</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              >
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+          </motion.div>
         </div>
 
         <div className="grid grid-cols-1 gap-5 md:grid-cols-3 md:grid-rows-2">
