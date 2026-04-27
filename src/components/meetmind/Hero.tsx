@@ -1,62 +1,5 @@
 import { motion } from "framer-motion";
 
-const Soundwave = () => {
-  // 18 bars that animate as a soundwave then visually morph into a checklist
-  const bars = Array.from({ length: 18 });
-  return (
-    <div className="relative flex h-44 items-center justify-center gap-1.5">
-      {bars.map((_, i) => (
-        <span
-          key={i}
-          className="block w-1.5 rounded-full bg-gradient-to-t from-neon-purple to-neon-cyan animate-soundwave"
-          style={{
-            height: `${30 + ((i * 13) % 70)}%`,
-            animationDelay: `${(i % 9) * 0.08}s`,
-            boxShadow: "0 0 12px hsl(var(--neon-cyan) / 0.6)",
-          }}
-        />
-      ))}
-    </div>
-  );
-};
-
-const Checklist = () => {
-  const items = [
-    "Enviar propuesta a Carla — Vie 22",
-    "Revisar KPIs Q2 con Finanzas",
-    "Agendar demo cliente Acme",
-    "Compartir resumen con el equipo",
-  ];
-  return (
-    <div className="glass w-full rounded-2xl p-5 text-left">
-      <div className="mb-4 flex items-center justify-between">
-        <span className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
-          Plan de acción · Reunión 14:30
-        </span>
-        <span className="flex h-2 w-2 rounded-full bg-neon-cyan shadow-glow-cyan" />
-      </div>
-      <ul className="space-y-3">
-        {items.map((it, i) => (
-          <motion.li
-            key={it}
-            initial={{ opacity: 0, x: -8 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.6 + i * 0.12, duration: 0.4 }}
-            className="flex items-center gap-3 text-sm"
-          >
-            <span className="flex h-5 w-5 items-center justify-center rounded-md border border-neon-cyan/40 bg-neon-cyan/10">
-              <svg viewBox="0 0 24 24" className="h-3 w-3 text-neon-cyan" fill="none" stroke="currentColor" strokeWidth="3">
-                <path d="M5 12l5 5L20 7" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
-            <span className="text-foreground/90">{it}</span>
-          </motion.li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
 const Hero = () => {
   return (
     <section id="top" className="relative pt-40 pb-28">
@@ -119,31 +62,23 @@ const Hero = () => {
           </a>
         </motion.div>
 
-        {/* Visual: soundwave morphing into checklist */}
+        {/* Video de YouTube */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.6 }}
-          className="relative mx-auto mt-20 grid max-w-5xl grid-cols-1 items-center gap-6 md:grid-cols-2"
+          className="relative mx-auto mt-20 max-w-5xl"
         >
-          <div className="glass relative overflow-hidden rounded-3xl p-8">
-            <div className="mb-3 flex items-center justify-between">
-              <span className="text-xs uppercase tracking-widest text-muted-foreground">
-                Captura en vivo
-              </span>
-              <span className="flex items-center gap-1.5 text-xs text-neon-cyan">
-                <span className="h-1.5 w-1.5 rounded-full bg-neon-cyan animate-pulse" />
-                REC
-              </span>
+          <div className="glass relative overflow-hidden rounded-3xl p-2">
+            <div className="relative aspect-video w-full overflow-hidden rounded-2xl">
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube.com/embed/ynXvG9EKAw0"
+                title="MeetMind Demo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
-            <Soundwave />
-            <div className="mt-2 text-center text-xs text-muted-foreground">
-              Conversación → señal → estructura
-            </div>
-          </div>
-          <div className="relative">
-            <div className="absolute -left-6 top-1/2 hidden h-px w-12 -translate-y-1/2 bg-gradient-to-r from-neon-cyan to-transparent md:block" />
-            <Checklist />
           </div>
         </motion.div>
       </div>
