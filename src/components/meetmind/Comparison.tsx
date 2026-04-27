@@ -133,7 +133,7 @@ const Comparison = () => {
           {/* Desktop Table */}
           <div className="hidden md:block overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02]">
             {/* Table Header */}
-            <div className="grid grid-cols-4">
+            <div className="grid grid-cols-5">
               <div className="p-6 border-b border-white/10">
                 <span className="text-xs uppercase tracking-widest text-muted-foreground/60">
                   Característica
