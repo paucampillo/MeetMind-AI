@@ -126,7 +126,7 @@ const BentoGrid = () => {
             className="mt-8 flex justify-center"
           >
             <a
-              href="https://meetmind-peach.vercel.app/"
+              href="https://meet-mind-ai.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full border border-neon-cyan/40 bg-surface-elevated/60 px-6 py-3 text-sm font-medium text-foreground backdrop-blur-md transition duration-300 hover:border-neon-cyan hover:shadow-glow-cyan"
