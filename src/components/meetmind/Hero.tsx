@@ -119,31 +119,23 @@ const Hero = () => {
           </a>
         </motion.div>
 
-        {/* Visual: soundwave morphing into checklist */}
+        {/* Video de YouTube */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.6 }}
-          className="relative mx-auto mt-20 grid max-w-5xl grid-cols-1 items-center gap-6 md:grid-cols-2"
+          className="relative mx-auto mt-20 max-w-5xl"
         >
-          <div className="glass relative overflow-hidden rounded-3xl p-8">
-            <div className="mb-3 flex items-center justify-between">
-              <span className="text-xs uppercase tracking-widest text-muted-foreground">
-                Captura en vivo
-              </span>
-              <span className="flex items-center gap-1.5 text-xs text-neon-cyan">
-                <span className="h-1.5 w-1.5 rounded-full bg-neon-cyan animate-pulse" />
-                REC
-              </span>
+          <div className="glass relative overflow-hidden rounded-3xl p-2">
+            <div className="relative aspect-video w-full overflow-hidden rounded-2xl">
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube.com/embed/ynXvG9EKAw0"
+                title="MeetMind Demo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
-            <Soundwave />
-            <div className="mt-2 text-center text-xs text-muted-foreground">
-              Conversación → señal → estructura
-            </div>
-          </div>
-          <div className="relative">
-            <div className="absolute -left-6 top-1/2 hidden h-px w-12 -translate-y-1/2 bg-gradient-to-r from-neon-cyan to-transparent md:block" />
-            <Checklist />
           </div>
         </motion.div>
       </div>
