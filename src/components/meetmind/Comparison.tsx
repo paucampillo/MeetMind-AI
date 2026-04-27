@@ -153,7 +153,7 @@ const Comparison = () => {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.3, delay: i * 0.04 }}
-                className={`grid grid-cols-4 ${
+                className={`grid grid-cols-5 ${
                   i !== rows.length - 1 ? "border-b border-white/5" : ""
                 }`}
               >
